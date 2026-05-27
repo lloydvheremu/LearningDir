@@ -15,11 +15,11 @@ Explanation nums[0] + nums[1] = 9, we return [0, 1].
 """
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         num_dict = {}
 
         for idx, val in enumerate(nums):
-            if target > val:
+            if val > target:
                 continue
             else:
                 complement = target - val
@@ -32,4 +32,5 @@ class Solution:
         return []
 
 
-
+test1 = Solution()
+print(test1.twoSum(nums=[2, 7, 1], target=9))
